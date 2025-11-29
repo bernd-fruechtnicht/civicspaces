@@ -128,7 +128,7 @@ CivicSpaces fills a missing layer: an open, plugin-driven framework combining ma
 
 ### Presentations
 
-- [Zero Carbon: English/Chinese Presentation](https://github.com/bernd-fruechtnicht/civicspaces/raw/main/pdfs/zero_carbon_en_cn.pdf) - PDF document in the `pdfs/` folder
+- <a href="https://github.com/bernd-fruechtnicht/civicspaces/raw/main/pdfs/zero_carbon_en_cn.pdf" target="_blank">Zero Carbon: English/Chinese Presentation</a> - PDF document in the `pdfs/` folder
 
 ### Additional Publications
 

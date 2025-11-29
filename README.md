@@ -75,6 +75,60 @@ Citizen Feedback Layer
             └─ "Heat pump waiting times"
 ```
 
+# “Embedding Model” in the context of CivicSpaces
+
+An embedding model converts text (citizen comments) into numerical vectors — 
+a mathematical representation that captures meaning (“semantics”).  
+This allows the system to automatically detect, cluster, and group similar content.
+
+## Why do we need embeddings in CivicSpaces?
+
+Citizen feedback often appears as free text:
+
+- “PV installer has a three-month waiting time”
+- “Photovoltaic technician unavailable”
+- “Solar panels delayed again”
+
+An embedding model recognises that these statements share similar meaning  
+→ they belong to the group **“PV shortages”**.
+
+This also works across languages (German / English / Chinese).
+
+## What does the model actually do?
+
+It transforms each text into a high-dimensional vector, for example:
+
+"I need a charging point" → [0.21, -0.13, 0.88, ...]  
+"The EV station is missing" → [0.22, -0.15, 0.85, ...]
+
+Vectors expressing similar meaning lie close together.  
+These vectors then enter the clustering engine, forming thematic groups:
+
+- “PV shortages”
+- “Battery delivery delays”
+- “Heat pump waiting times”
+- “Dangerous crossings”
+- “Need more shading / trees”
+
+## Which models could we use?
+
+### 1) Lightweight (local, browser/server)
+
+- SentenceTransformers MiniLM  
+- MPNet-base-v2  
+- bge-small-en / bge-m3 (multilingual)
+
+→ fast, can run offline, ideal for prototype
+
+### 2) High-quality (API-based)
+
+- OpenAI text-embedding-3-small  
+- Jina Embeddings  
+- Cohere Embed  
+
+→ better accuracy, but requires API  
+→ for Prototype Fund: prefer **local + open-source alternative**
+
 ## Potential Use Cases
 
 ### A) Shading proposals (trees / shelters)

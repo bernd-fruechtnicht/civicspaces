@@ -128,7 +128,7 @@ CivicSpaces fills a missing layer: an open, plugin-driven framework combining ma
 
 ### Presentations
 
-- [Presentation]() - PDF document in the `pdfs/` folder
+- [Zero Carbon: English/Chinese Presentation](pdfs/zero_carbon_en_cn.pdf) - PDF document in the `pdfs/` folder
 
 ### Additional Publications
 
@@ -140,4 +140,4 @@ Project results will be made publicly available under an open-source license (MI
 
 ## Contact
 
-For more information about the project, please contact the team.
+For more information about the project, please contact the team via Github.
